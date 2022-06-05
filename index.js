@@ -65,7 +65,7 @@ application.get("/team",(req, res)=>{
 application.use("/public",express.static("public"));
 application.use("/kinetics", KineticsContoller);
 
-const port = process.env.PORT || '5000'
+const port = process.env.PORT || '80'
 application.listen(port, ()=>{
     console.log("Server")
 });
